@@ -1,6 +1,6 @@
 # Fontpicker jQuery Plugin
 
-Forked so it can be published to npm.
+Forked so it can be published and installed from npm and be used within webpack.
 
 A component to quickly choose fonts from Google Web Fonts, custom fonts you (the web developer) provide, as well as system fonts.
 Lets users easily select and preview a font from Google's large range of free fonts, and optionally select a font weight and font style (normal or italics).
@@ -50,20 +50,8 @@ This plugin is the successor of the [Fontselect jQuery plugin](https://github.co
 
 ### Installation
 
-This is a jQuery plugin, so... make sure you load jQuery before you include this plugin.
-
-With a copy on your server:
-```html
-<link href="/path/to/dist/jquery.fontpicker.min.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="/path/to/dist/jquery.fontpicker.min.js"></script>
-```
-
-You can also load it from jsDelivr:
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/av01d/fontpicker-jquery-plugin@1.4.4/dist/jquery.fontpicker.min.css" integrity="sha256-urFh3EMgi9s3j3w+TsAP1TfUQiE0yUZmmLX7JRyvjqE=" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/gh/av01d/fontpicker-jquery-plugin@1.4.4/dist/jquery.fontpicker.min.js" integrity="sha256-+UHNQaPSVoGbGqqvjreSLWm7Zm6k+hQh2lbfwATpQEY=" crossorigin="anonymous"></script>
+```bash
+npm install fontpicker-jquery-plugin --save
 ```
 
 ### Usage
@@ -71,7 +59,13 @@ You can also load it from jsDelivr:
 To create a font picker, simply run the plugin on a standard html `input` element.
 
 #### Syntax
+Inside a script compiled with webpack:
 ```js
+const $ = jQuery = require('jquery');
+
+require('fontpicker-jquery-plugin/dist/jquery.fontpicker.css');
+require('fontpicker-jquery-plugin/dist/jquery.fontpicker');
+
 $('input.fonts').fontpicker([options]);
 ````
 

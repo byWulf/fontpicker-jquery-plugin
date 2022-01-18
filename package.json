@@ -1,0 +1,14 @@
+{
+  "name": "fontpicker-jquery-plugin",
+  "version": "1.4.5",
+  "description": "A component to quickly choose fonts from Google Web Fonts, custom fonts you (the web developer) provide, as well as system fonts.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byWulf/fontpicker-jquery-plugin.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/av01d/fontpicker-jquery-plugin/issues"
+  },
+  "homepage": "https://github.com/byWulf/fontpicker-jquery-plugin#readme"
+}
